@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Meet Morrow, an independent creative studio for good people with good ideas.">
+    <title>About — Morrow Studio</title>
+    <link rel="stylesheet" href="{% static 'css/site.css' %}">
+</head>
+<body>
+    <header class="site-header">
+        <a class="wordmark" href="{% url 'home' %}" aria-label="Morrow Studio home">morrow<span>.</span></a>
+        <nav class="main-nav" aria-label="Main navigation">
+            <a href="{% url 'home' %}#work">Selected work</a>
+            <a href="{% url 'about' %}" aria-current="page">About</a>
+            <a class="nav-contact" href="{% url 'home' %}#contact">Let's talk <span aria-hidden="true">↗</span></a>
+        </nav>
+    </header>
+    <main>
+        <section class="about-hero">
+            <p class="eyebrow"><span class="status-dot"></span> A small studio with a wide-open mind</p>
+            <h1>Good people.<br><em>Good ideas.</em><br>Room to grow.</h1>
+            <div class="about-art" role="img" aria-label="A warm abstract landscape in peach, cream, and green">
+                <div class="about-art-sun"></div>
+                <div class="about-art-line"></div>
+                <div class="about-art-hill"></div>
+                <span>MADE WITH CARE, ALWAYS</span>
+            </div>
+        </section>
+        <section class="about-copy section-wrap">
+            <p class="eyebrow">A little about Morrow</p>
+            <div>
+                <h2>We believe the best work comes from being <em>curious, kind, and all in.</em></h2>
+                <p>Morrow is an independent creative studio for people building a brighter, more considered future. We bring clarity to the complicated bits, care to every detail, and a healthy dose of optimism to the whole process.</p>
+                <p>We're intentionally small, which means you work directly with the people doing the work. No big egos or big-agency machinery — just good conversation, thoughtful collaboration, and a shared belief in what you're making.</p>
+            </div>
+        </section>
+        <section class="values-section">
+            <p class="eyebrow">How we like to work</p>
+            <div class="value-grid">
+                <article><span>01</span><h3>Stay curious.</h3><p>Ask better questions. Look a little closer. Leave room for the unexpected.</p></article>
+                <article><span>02</span><h3>Care deeply.</h3><p>Good partnerships make good work. We show up, listen, and mean it.</p></article>
+                <article><span>03</span><h3>Keep it human.</h3><p>Less noise, more meaning. Make it useful, make it welcoming, make it real.</p></article>
+            </div>
+        </section>
+        <section class="about-cta">
+            <p class="eyebrow">The next good thing starts somewhere</p>
+            <h2>Maybe it starts<br><em>with a hello.</em></h2>
+            <a class="contact-link" href="mailto:hello@morrow.studio">hello@morrow.studio <span aria-hidden="true">↗</span></a>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <a class="wordmark" href="{% url 'home' %}">morrow<span>.</span></a>
+        <p>Independent by choice. Optimistic by nature.</p>
+        <div><a href="{% url 'home' %}#work">Selected work</a><a href="{% url 'home' %}#contact">Get in touch</a><span>© Morrow Studio 2026</span></div>
+    </footer>
+</body>
+</html>
